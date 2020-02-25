@@ -76,3 +76,67 @@ body {
         width: 15em;
     }
 }
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 20px;
+    }
+
+    button {
+        width: 60% !important;
+    }
+
+    input {
+        width: calc(60% - 1em) !important;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .logo {
+        margin: 1em 0;
+    }
+
+    p {
+        line-height: 1.7em !important;
+    }
+
+    .inner {
+        display: grid;
+        grid-template-columns: 55% auto;
+        .left {
+            text-align: left;
+            padding: 0 2em;
+            height: 100vh;
+            display: grid;
+
+            .content {
+                padding: 0 3em;
+            }
+
+            h1 {
+                margin: 0;
+                font-size: 2.4em;
+
+                span {
+                    display: block;
+                }
+            }
+        }
+
+        .right {
+            text-align:right;
+            align-self: center;
+            padding: 0 2em 1.5em;
+            justify-self: center;
+
+            input {
+                width: calc(100% - 1em) !important;
+                margin: 1em 0;
+            }
+
+            button {
+                width: 100% !important;
+            }
+        }
+    }
+}
