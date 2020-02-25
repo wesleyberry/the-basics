@@ -134,5 +134,35 @@ body {
   .inner .right button {
     width: 100% !important;
   }
+  .proto-container {
+    -webkit-clip-path: inset(0 45% 0 0);
+            clip-path: inset(0 45% 0 0);
+    position: absolute;
+    top: 20%;
+    height: 70%;
+    z-index: 0;
+    width: 100%;
+  }
+  .proto-container .proto {
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    width: 19%;
+    height: 80%;
+    float: left;
+    margin-left: 1em;
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  body {
+    font-size: 22px;
+  }
+  .content {
+    padding: 0 6em !important;
+  }
+  .right {
+    padding: 0 !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */
